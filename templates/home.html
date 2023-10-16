@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="static/css/main.css">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <title>Zodiac Online</title>
+</head>
+<body>
+  <div id="header">
+        <div id="inner-header">
+          <h1>Zodiac Online</h1>
+        </div>
+  </div>
+  <div id="choose-date">
+    <h5>{{ date }}</h5>
+    <form>
+        <select name="sunsign" required="required">
+            <option value="">Choose your date of birth</option>
+            <option value="aries">March 21 - April 19</option>
+            <option value="taurus">April 20 - May 20</option>
+            <option value="gemini">May 21 - June 20</option>
+            <option value="cancer">June 21 - July 22</option>
+            <option value="leo">July 23 - August 22</option>
+            <option value="virgo">August 23 - September 22</option>
+            <option value="libra">September 23 - October 22</option>
+            <option value="scorpio">October 23 - November 21</option>
+            <option value="sagittarius">November 22 - December 21</option>
+            <option value="capricorn">December 22 - January 19</option>
+            <option value="aquarius">Jan 20 - Feb 18</option>
+            <option value="pisces">Feb 19 - March 20</option>
+        </select>
+        <input type="submit" value="Submit">
+    </form>
+  </div>
+  <div id="main">
+    <h2>{{ sunsign }}</h2>
+   
+    <h4>Your horoscope for today</h4>
+    <p>{{ astro }}</p>
+  </div>
+  <div id="description">
+    <h4>Your sign description</h4>
+    <p>{{ info.date_range }}</p>
+    <p>{{ info.about }}</p>
+    <p><b>Element:</b> {{ info.element }}</p>
+    <p><b>Ruling planet:</b> {{ info.ruling_planet }}</p>
+    <p><b>Symbol:</b> {{ info.symbol }}</p>
+    <p><b>Compatible signs:</b> {{ info.compatibility }}</p>
+    <p><b>Strengths:</b> {{ info.strengths }}</p>
+    <p><b>Weaknesses:</b> {{ info.weaknesses }}</p>
+  </div>
+  <div class="footer">
+    <footer>
+      <p>© Webpage by TeenAsher - Tatiana Shilina </p><br>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Ysabeau+Infant:wght@200;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: LavenderBlush;
+    background-image: url(img/stars2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+#header {
+    padding-top: 15px;
+
+}
+
+#inner-header {
+    font-family: Castoro Titling;
+    font-size: 35px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: rgb(14, 0, 41);
+    text-shadow: 0 0 9px #5100ff, 0 0 10px #ff73f6
+}
+
+#choose-date {
+    width: 40%;
+    margin-left: 30%;
+    font-family: Ysabeau Infant;
+    font-weight: 500;
+    font-size: 20px;
+    color:rgb(233, 183, 247);
+    text-shadow: 0 0 9px #5100ff, 0 0 10px #ff73f6;
+}    
+
+#choose-date h5 {
+    font-size: 25px;
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+input[type="date"], select {
+    height: 30px;
+    width: 30%;
+    font-family: Ysabeau Infant;
+    font-weight: 500;
+    font-size: 18px;
+    color: rgb(58, 2, 58);
+    background: Plum;
+    border: 1px solid Thistle;
+    margin: 2px 6px 16px 6.5%;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    height: 32px;
+    width: 30%;
+    margin-left: 25%;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: Ysabeau Infant;
+    padding: 5px, 10px, 5px, 10px;
+    color: rgb(39, 16, 52);
+    background: rgb(149, 144, 255);
+    border: 1px solid Thistle;
+}
+
+input[type="submit"]:hover{
+    background: #FFF0F5
+}
+
+input[type="submit"]:active{
+    background: #805da3;
+    color:rgb(14, 0, 41);
+}
+
+#main {
+    margin-top: 5%;
+    margin-left: 13%;
+    max-width: 70%;
+    padding: 30px;
+    padding-top: 10px;
+    font-family: Ysabeau Infant;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: justify;
+    border-radius: 10px 90px;
+    background-color: rgba(51, 31, 64, 0.664);
+    opacity: 1;
+}
+
+#description {
+    margin-top: 5%;
+    margin-left: 13%;
+    max-width: 70%;
+    padding: 30px;
+    font-family: Ysabeau Infant;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: justify;
+    border-radius: 90px 10px;
+    color: rgb(16, 1, 43);
+    background-color: rgba(214, 160, 250, 0.374);
+    opacity: 1;
+}
+
+.footer {
+    margin-top: 50px;
+    text-align: center;
+    font-family: Ysabeau Infant;
+    font-weight: 500;
+    font-size: 20px;
+    text-shadow: 0 0 9px #250e55, 0 0 10px #ffa0f9;
+}   
+
+.error {
+    margin-top: 60px;
+    margin-bottom: 50vh;
+    margin-left: 30%;
+    font-family: Ysabeau Infant;
+    font-weight: 500;
+    font-size: 40px;
+    background-color: rgba(51, 31, 64, 0.664);
+    width: 40%;
+    padding: 30px;
+    border-radius: 40px;
+}
+
+.error a {
+    color: #d1aaef;
+}
